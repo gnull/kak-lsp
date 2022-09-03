@@ -3,11 +3,11 @@
 Additions:
 - `lsp-auto-signature-help-enable` now shows an info box by default, and formats the active parameter in a bold font.
 - `lsp-definition` and friends now select the symbol name instead of merely placing the cursor at symbol start.
-` `lsp-highlight-references` now select all references in the current buffer.
+- `lsp-highlight-references` now selects all references in the current buffer.
 - Added support for `codeAction/resolve`, which allows to use code actions sent by Deno for example.
 
 Fixes:
-- `lsp-rename` will now write modified background buffers to preserve consistency.
+- `lsp-rename` will now write hidden buffers that are affected by the rename to preserve consistency.
 - When talking to servers that don't support [UTF-8 byte offsets](https://clangd.llvm.org/extensions.html#utf-8-offsets), `kak-lsp` now adheres to the LSP specification by treating column offsets as UTF-16 Code Units instead of Unicode Code Points.
 
 ## 14.0.0 - 2022-08-29
